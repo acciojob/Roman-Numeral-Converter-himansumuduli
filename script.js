@@ -16,8 +16,8 @@ function convertToRoman(num) {
     };
 
   //your code here
-  let result = '';
-  for (const [symbol, value] of Object.values(obj)) {
+  let result = "";
+  for (const [symbol, value] of Obj.reverse() ){
     while (num >= value) {
       result += symbol;
       num -= value;
